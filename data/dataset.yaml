@@ -1,0 +1,19 @@
+# Dataset paths
+path: data
+train: images/train
+val: images/val
+test: images/test
+
+# Number of classes
+nc: 8
+
+# Class names
+names:
+  0: Episiotomy_Scissors
+  1: Forceps
+  2: Hemostat
+  3: Mayo_Scissors
+  4: Overlapping
+  5: Scalpel
+  6: Stitch_Scissors
+  7: Syringe
