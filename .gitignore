@@ -139,10 +139,12 @@ celerybeat.pid
 # RabbitMQ
 mnesia/
 rabbitmq/
-rabbitmq-data/
+rabbitmq-data/images/
+data/labels/
 
 # ActiveMQ
-activemq-data/
+activemq-data/images/
+data/labels/
 
 # SageMath parsed files
 *.sage.py
@@ -215,6 +217,7 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 .venv/
-data/
+data/images/
+data/labels/
 runs/
 *.pt
