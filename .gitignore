@@ -221,3 +221,9 @@ data/images/
 data/labels/
 runs/
 *.pt
+
+# Add on fixes
+outputs/runs/
+outputs/models/
+*.pth
+*.onnx
