@@ -155,7 +155,7 @@ def process_split(split):
 # Run
 if DEST.exists():
     shutil.rmtree(DEST)
-    print("🗑️  Cleared old dataset\n")
+    print("Cleared old dataset\n")
 
 print("Building contamination dataset...\n")
 for split in SPLITS:
