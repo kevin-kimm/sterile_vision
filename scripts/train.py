@@ -13,7 +13,6 @@ model = YOLO(MODEL)
 
 results = model.train(
     data    = DATA,
-    resume = True,
     epochs  = EPOCHS,
     imgsz   = IMGSZ,
     batch   = BATCH,
@@ -22,6 +21,7 @@ results = model.train(
     device  = "mps",        # Apple M4 GPU
     patience= 10,           # early stop
     save    = True,
+    exist_ok = True,  # prevents creating new version every run
 )
 
 print("\nTraining complete")
