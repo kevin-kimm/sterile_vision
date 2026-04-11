@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-04-11 11:51:26",
+  "model": "runs/classify/outputs/runs/sterile_vision_v12/weights/best.pt",
+  "total": 1048,
+  "correct": 1047,
+  "wrong": 1,
+  "accuracy": 0.999,
+  "misclassified": [
+    {
+      "image": "5392_jpg.rf.61bf7723b35edcc0392622ce94bdef2e.jpg",
+      "true_label": "contaminated",
+      "predicted": "clean",
+      "confidence": 0.6004
+    }
+  ]
+}
