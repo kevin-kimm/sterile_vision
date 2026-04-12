@@ -58,11 +58,45 @@ that:
 A partnership with a hospital SPD department and IRB approval for image 
 collection would be the logical next step toward real world deployment.
 
-## Model
+## COntamination Detection Model
 - Architecture: YOLOv8n-cls (nano classification)
 - Training: 29 epochs (early stopped)
 - Training time: ~20 minutes on Apple M4
 - Final accuracy: 99.90% on test set (1,047/1,048 correct)
+
+## Tool Sorting Model
+
+In a real SPD workflow, all tools returning from surgery are assumed contaminated.
+Before decontamination, tools need to be sorted by type for proper sterilization 
+protocols. This second model handles that classification step.
+
+### SPD Workflow
+Surgery ends
+↓
+Tools return to SPD (all assumed contaminated)
+↓
+Step 1: SORT by tool type ← sterile_sorter_v1
+↓
+Step 2: Decontaminate
+↓
+Step 3: INSPECT for residue ← sterile_vision_v12
+↓
+Step 4: Sterilize and repackage
+
+### Sorter Model Details
+- Architecture: YOLOv8n-cls (nano classification)
+- Classes: 7 surgical tool types
+  - Episiotomy Scissors
+  - Forceps
+  - Hemostat
+  - Mayo Scissors
+  - Scalpel
+  - Stitch Scissors
+  - Syringe
+- Training: 42 epochs (early stopped)
+- Training time: ~12 minutes on Apple M4
+- Final accuracy: 99.9% on test set
+- Dataset: 448 images per class (3,136 train | 896 val | 448 test)
 
 ## Scripts
 
