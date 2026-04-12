@@ -8,7 +8,7 @@ model = YOLO(str(MODEL_PATH))
 # Test images 
 test_images = {
     "episiomity_01.jpeg" : "Episiotomy Scissors",
-    "forceps_01.jpg"     : "Hemostat",
+    "forceps_01.png"     : "Forceps",
     "hemostat_01.png"    : "Hemostat",
     "scalpel_01.jpeg"    : "Scalpel",
     "scissors_01.png"    : "Mayo",
