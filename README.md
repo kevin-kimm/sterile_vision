@@ -98,6 +98,16 @@ Step 4: Sterilize and repackage
 - Final accuracy: 99.9% on test set
 - Dataset: 448 images per class (3,136 train | 896 val | 448 test)
 
+### Real World Test Results
+5 real world images tested (white background, outside training dataset):
+- episiomity_01.jpeg → Episiotomy Scissors  99.98% PASS
+- forceps_01.png     → Forceps              98.86% PASS
+- hemostat_01.png    → Hemostat             88.16% PASS
+- scalpel_01.jpeg    → Scalpel              99.73% PASS
+- scissors_01.png    → Mayo Scissors        99.52% PASS
+
+**Total: 5/5 correct (100.00%)**
+
 ## Scripts
 
 ### 1. Prepare Dataset
