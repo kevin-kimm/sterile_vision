@@ -58,7 +58,7 @@ that:
 A partnership with a hospital SPD department and IRB approval for image 
 collection would be the logical next step toward real world deployment.
 
-## COntamination Detection Model
+## Contamination Detection Model
 - Architecture: YOLOv8n-cls (nano classification)
 - Training: 29 epochs (early stopped)
 - Training time: ~20 minutes on Apple M4
